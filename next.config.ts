@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   // Proxy /yolo/* → YOLO API to avoid CORS and keep the API URL server-side.
   async rewrites() {
     return [
